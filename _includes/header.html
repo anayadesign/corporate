@@ -1,0 +1,200 @@
+<script>
+  $(function() {
+    // Toggle Nav on Click
+    $('#the_button').click(function() {
+      var transitionClass = $(this).data('transition');
+      $('body').removeClass();
+      $('#site-canvas').removeClass();
+      $('#site-canvas').addClass(transitionClass);
+      $('#site-wrapper').toggleClass('show-nav');
+      return false;
+    });
+    $('.collapse').click(function() {
+      $(this).find("ul").toggle();
+      $(this).find("i").toggleClass('open');
+    });
+  });
+</script>
+
+<div id="site-menu">
+  <ul class="off-canvas">
+    <li class="collapse">
+      <a href="#" id="about">ABOUT US <i class="fa fa-angle-right"></i></a>
+      <ul>
+        <li>
+          <a href="/aboutus/">Overview</a>
+        </li>
+        <li>
+          <a href="/aboutus/boardofdirectors">Board of Directors</a>
+        </li>
+        <li>
+          <a href="/aboutus/timeline">Timeline</a>
+        </li>
+        <li>
+          <a href="/aboutus/leadership">Leadership Team</a>
+        </li>
+      </ul>
+    </li>
+    <li class="collapse">
+      <a href="#" id="brands">OUR BRANDS <i class="fa fa-angle-right"></i></a>
+      <ul>
+        <li>
+          <a href="/brands/">Overview</a>
+        </li>
+        <li>
+          <a href="/brands/apc">Allposters</a>
+        </li>
+        <li>
+          <a href="/brands/art">Art.com</a>
+        </li>
+        <li>
+          <a href="/brands/zenfolio">Zenfolio</a>
+        </li>
+      </ul>
+    </li>
+    <li class="collapse">
+      <a href="#" id="careers">CAREERS <i class="fa fa-angle-right"></i></a>
+      <ul>
+        <li>
+          <a href="/careers/">Overview</a>
+        </li>
+        <li>
+          <a href="/careers/missionvalues">Our Mission and Values</a>
+        </li>
+        <li>
+          <a href="/careers/benefits">Benefits</a>
+        </li>
+        <li>
+          <a href="/careers/culture">Culture</a>
+        </li>
+        <li>
+          <a href="/careers/openpositions">Open Positions</a>
+        </li>
+      </ul>
+    </li>
+    <li class="collapse">
+      <a href="#" id="media">MEDIA <i class="fa fa-angle-right"></i></a>
+      <ul>
+        <li>
+          <a href="/media/">Overview</a>
+        </li>
+        <li>
+          <a href="/media/mediareleases">Press Releases</a>
+        </li>
+        <li>
+          <a href="/media/news">News Coverage</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a class="ipad" href="/artlabs/ipad.html" id="labs">Labs</a>
+    </li>
+    <li>
+      <a class="phone" href="/artlabs/iphoneFriendly.html" id="labs">Labs</a>
+    </li>
+    <li>
+      <a href="/contact/" id="contact">Contact Us</a>
+    </li>
+  </ul>
+</div>
+
+
+<a data-transition="ease" href="#" id="the_button">
+  <i class="fa fa-bars"></i>
+</a>
+
+<div class="hdr">
+  <div class="logo">
+    <a href="/">
+      <img alt="ART.COM Inc" height="41" src="http://cache1.artprintimages.com/images/Corporate/site/logo_corp.gif" width="209">
+    </a>
+  </div>
+  <ul id="navbar">
+    <!-- ABOUT US -->
+    <li class="nav_mainitem">
+      <a href="/aboutus/" id="about">ABOUT US</a>
+      <div class="navbox1 arrow">
+        <ul class="submenu">
+          <li class="nav_subitem">
+            <a href="/aboutus/">Overview</a>
+          </li>
+          <li class="nav_subitem">
+            <a href="/aboutus/leadership">Leadership Team</a>
+          </li>
+          <li class="nav_subitem">
+            <a href="/aboutus/boardofdirectors">Board of Directors</a>
+          </li>
+          <li class="nav_subitem">
+            <a href="/aboutus/timeline">Timeline</a>
+          </li>
+        </ul>
+      </div>
+    </li><!-- OUR BRANDS -->
+    <li class="nav_mainitem">
+      <a href="/brands/" id="brands">OUR BRANDS</a>
+      <div class="navbox2 arrow">
+        <ul class="submenu">
+          <li class="nav_subitem">
+            <a href="/brands/">Overview</a>
+          </li>
+          <li class="nav_subitem">
+            <a href="/brands/art">Art.com</a>
+          </li>
+          <li class="nav_subitem">
+            <a href="/brands/apc">Allposters.com</a>
+          </li>
+          <li class="nav_subitem">
+            <a href="/brands/zenfolio">Zenfolio</a>
+          </li>
+        </ul>
+      </div>
+    </li><!-- CAREERS -->
+    <li class="nav_mainitem">
+      <a href="/careers/" id="careers">CAREERS</a>
+      <div class="navbox3 arrow">
+        <ul class="submenu">
+          <li class="nav_subitem">
+            <a href="/careers/">Overview</a>
+          </li>
+          <li class="nav_subitem">
+            <a href="/careers/openpositions">Open Positions</a>
+          </li>
+          <li class="nav_subitem">
+            <a href="/careers/culture">Culture</a>
+          </li>
+          <li class="nav_subitem">
+            <a href="/careers/benefits">Benefits</a>
+          </li>
+          <li class="nav_subitem">
+            <a href="/careers/missionvalues">Our Mission and Values</a>
+          </li>
+        </ul>
+      </div>
+    </li><!-- CAREERS -->
+    <!-- MEDIA -->
+    <li class="nav_mainitem">
+      <a href="/media/" id="media">MEDIA</a>
+      <div class="navbox4 arrow">
+        <ul class="submenu">
+          <li class="nav_subitem">
+            <a href="/media/">Overview</a>
+          </li>
+          <li class="nav_subitem">
+            <a href="/media/mediareleases">Press Releases</a>
+          </li>
+          <li class="nav_subitem">
+            <a href="/media/news">News Coverage</a>
+          </li>
+        </ul>
+      </div>
+    </li><!-- MEDIA -->
+    <!-- ART LABS -->
+    <li class="nav_mainitem">
+      <a href="/artlabs/index.html" id="labs">Labs</a>
+    </li><!-- ART LABS -->
+    <!-- CONTACT US -->
+    <li class="nav_mainitem">
+      <a href="/contact/" id="contact">Contact Us</a>
+    </li><!-- CONTACT US -->
+  </ul>
+</div>

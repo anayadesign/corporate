@@ -1,0 +1,78 @@
+---
+layout: default
+title: Press Releases Room
+permalink: /media/mediareleases
+---
+
+<div id="container">
+  <div id="content">
+    <!--PAGE TITLE-->
+    <div id="toptitle">
+      <h1>Press Releases</h1>
+    </div><!--PAGE TITLE-->
+    <!--PRESS RELEASE CONTENT-->
+    <div id="leftrightwrap">
+      <div id="l-side">
+        <div class="left-top">
+          <script>
+          <!--
+          function MM_jumpMenu(targ,selObj,restore){ //v3.0
+          eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'"); if (restore) selObj.selectedIndex=0; }
+          //-->
+          </script>
+          <select class="pressmenu" name="select" onchange="MM_jumpMenu('parent',this,1)">
+            <option selected value="">View by Year</option>
+            <option value="media_releases_15.asp">2015</option>
+            <option value="media_releases_14.asp">2014</option>
+            <option value="media_releases_13.asp">2013</option>
+            <option value="media_releases_12.asp">2012</option>
+            <option value="media_releases_11.asp">2011</option>
+            <option value="media_releases_10.asp">2010</option>
+            <option value="media_releases_09.asp">2009</option>
+            <option value="media_releases_08.asp">2008</option>
+            <option value="media_releases_07.asp">2007</option>
+          </select>
+        </div>
+        <div class=""></div><!-- Start preview bar -->
+
+        {% for news in site.categories.press-release %}
+        <div class="media_previewbar">
+          <div class="media_preview_date">
+            {{news.date-tag}}
+          </div>
+          <div class="media_preview_title">
+            <a href="{{news.url}}">{{news.title}}</a>
+          </div>
+          <div class="clear"></div>
+        </div><!-- END preview bar -->
+        {% endfor %}
+
+        <div class="media_previewbar">
+          <div class="media_preview_date">
+            October 2007
+          </div>
+          <div class="media_preview_title">
+            <a href="media_releases_200710.asp">Art.com Ranks as a Hot 100 Best Retail Web Site for 2008 by<br>
+            InternetRetailer.com</a>
+          </div>
+          <div class="clear"></div>
+        </div><!-- END preview bar -->
+        <div class="media_previewbar">
+          <div class="media_preview_date">November 2008</div>
+          <div class="media_preview_title"><a href="media_releases_200811.asp">Art.com Inc Announces New Chief Financial Officer</a></div>
+          <div class="clear"></div>
+        </div>
+        <!-- END preview bar -->
+        <!-- Start preview bar -->
+        <div class="media_previewbar_g">
+          <div class="media_preview_date">June 2008</div>
+          <div class="media_preview_title"><a href="media_releases_200806.asp">Country Chic, Global Inspiration and Pop Culture Among Top<br />
+          Fall Trends in Wall Decor</a></div>
+          <div class="clear"></div>
+        </div>
+
+      </div>
+      {% include media_contact.html %}
+    </div>
+  </div>
+</div>
